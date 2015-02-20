@@ -33,6 +33,10 @@ $(document).ready(function(){
     $(".content").on("click", ".fa-minus-square", function() {
         $(this).parent().parent().remove();
     });
+    //New Page (Delete all items
+    $(".new").click(function(){
+        $(".content").children().remove();
+    });
 });
 
 
